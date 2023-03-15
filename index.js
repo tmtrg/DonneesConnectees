@@ -1,5 +1,6 @@
 var express = require('express');
 var app = express();
+var cors = require('cors');
 
 const port = process.env.PORT || 3000;
 
@@ -11,12 +12,17 @@ var id=0;
 
 app.use(express.static('html'));
 
-	
-app.post("/annotation", function(req, res){
+app.use((req, res, next)=>{
+	res.header('Access-Control-Allow-Origin', '*');
+	res.header('Access-Control-Allow-Methods', 'GET, PUT? POST, DELETE');
+	res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization, Content-Length, x-Requested-With');
+	next();
+});
+
+
+app.post("/annotation", cors(), function(req, res){
 	var body = req.body;
-	// console.log(body);
 	data[id]=body;
-	// data.push(body);
 	console.log(data);
 	id++;
 	res.send();
