@@ -61,7 +61,7 @@
 <body>
 
 	<h1>Ecrire une annotation</h1>
-	<form autocomplete="off">
+	<form action="https://donneesconnectee.onrender.com/annotation" method="GET">
 		<p>
 			<label for="URI">URI :</label>
 			<input type="text" name="URI" id="IdURI" placeholder="" size="30">
@@ -85,7 +85,7 @@
 
 
 	<h1>Récupérer une annotation</h1>
-	<form action="/IdAnnot" method="GET" autocomplete="off">
+	<form action="https://donneesconnectee.onrender.com/annotation" method="GET">
 		<p>
 			<label for="Annot">Numéro d'annotation :</label>
 			<input type="text" name="Annot" id="IdAnnot" placeholder="" size="30" maxlength="20">
@@ -109,7 +109,7 @@
 
 
 	<h1>Récupérer toutes les annotations</h1>
-	<form action="/AllAnnot" method="GET" autocomplete="off">
+	<form action="https://donneesconnectee.onrender.com/annotation" method="GET">
 		<p>
 			<label for="FormatAllAnnot">Choisissez le format de réponse</label><br>
 			<select name="FormatAllAnnot" id="FormatAllAnnot">
@@ -125,7 +125,7 @@
 
 
 	<h1>Récupérer toutes les annotations d'une URI</h1>
-	<form action="/URI" method="GET" autocomplete="off">
+	<form action="https://donneesconnectee.onrender.com/annotation" method="GET">
 		<p>
 			<label for="AnnotURI">URI :</label>
 			<input type="text" name="AnnotURI" id="AnnotURI" placeholder="" size="30">
