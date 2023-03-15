@@ -60,7 +60,7 @@
 
 <body>
 
-	<h1>Ecrire Annotation</h1>
+	<h1>Ecrire une annotation</h1>
 	<form autocomplete="off">
 		<p>
 			<label for="URI">URI :</label>
@@ -87,7 +87,7 @@
 	<h1>Récupérer une annotation</h1>
 	<form action="/IdAnnot" method="GET" autocomplete="off">
 		<p>
-			<label for="Annot">Clé de l'annotation recherchée :</label>
+			<label for="Annot">Numéro d'annotation :</label>
 			<input type="text" name="Annot" id="IdAnnot" placeholder="" size="30" maxlength="20">
 		</p>
 		<p>
@@ -125,7 +125,7 @@
 
 
 	<h1>Récupérer toutes les annotations d'une URI</h1>
-	<form action="/AnnotURI" method="GET" autocomplete="off">
+	<form action="/URI" method="GET" autocomplete="off">
 		<p>
 			<label for="AnnotURI">URI :</label>
 			<input type="text" name="AnnotURI" id="AnnotURI" placeholder="" size="30">
